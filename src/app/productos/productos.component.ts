@@ -7,6 +7,6 @@ import { RouterEvent, RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
-export class ProductosComponent {
+export default class ProductosComponent {
 
 }

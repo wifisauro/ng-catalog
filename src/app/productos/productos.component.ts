@@ -5,7 +5,7 @@ import { RouterEvent, RouterLink, RouterOutlet } from '@angular/router';
   selector: 'app-productos',
   imports: [RouterOutlet, RouterLink],
   templateUrl: './productos.component.html',
-  styleUrl: './productos.component.css'
+  styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent {
 

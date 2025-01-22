@@ -4,9 +4,9 @@ import { ListarComponent } from './pages/listar/listar.component';
 import { ProductosComponent } from './productos.component';
 
 export const routes: Routes = [
-    {path: '', component: ProductosComponent},
-    {path: 'productos', component: ProductosComponent,children:[
+    {path: '', component: ProductosComponent, children:[
          {path: 'listar', component: ListarComponent},
          {path: 'detalle', component: DetalleComponent}
     ]},
+    { path: '**', redirectTo: '', pathMatch: 'full'}
 ];

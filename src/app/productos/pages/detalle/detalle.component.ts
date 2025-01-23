@@ -1,5 +1,7 @@
+import { Producto } from './../../interfaces/producto.interface';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 
 
 @Component({
@@ -9,6 +11,11 @@ import { CommonModule } from '@angular/common';
   template: '<h2>Detalle del Producto</h2>',
   styleUrls: ['./detalle.component.css']
 })
-export class DetalleComponent {
+export default class DetalleComponent {
+  producto : Producto ={
+    name: "Pincel",
+    description: "Tamaño numero 8, punta plana" ,
+    precio: 100,
+  }
 
 }

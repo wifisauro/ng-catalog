@@ -1,3 +1,5 @@
-<p>Escoba Blanca!</p>
-<p>Trapero Rojo!</p>
-<p>Recogedor Vinotinto!</p>
+<h2>Detalle del Producto</h2>
+<p><strong>Nombre:</strong> {{ <producto class="name"></producto> }}</p>
+<p><strong>Descripción:</strong> {{ producto.description }}</p>
+<p><strong>Precio:</strong> ${{ producto.precio }}</p>
+<img *ngIf="producto.imagenUrl" [src]="producto.imagenUrl" alt="{{ producto.nombre }}" width="200">

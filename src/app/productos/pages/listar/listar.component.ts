@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   template: '<h2>Lista de Productos</h2>',
   styleUrl: './listar.component.css'
 })
-export class ListarComponent {
+export default class ListarComponent {
 
 }

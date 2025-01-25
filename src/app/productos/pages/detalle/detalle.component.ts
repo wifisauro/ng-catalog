@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-detalle',
   standalone: true,
   imports: [CommonModule],
-  template: '<h2>Detalle del Producto</h2>',
+  templateUrl: './detalle.component.html',
   styleUrls: ['./detalle.component.css']
 })
 export default class DetalleComponent {
@@ -16,6 +16,7 @@ export default class DetalleComponent {
     name: "Pincel",
     description: "Tamaño numero 8, punta plana" ,
     precio: 100,
+    imagen: "https://www.pincel.net"
   }
 
 }

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-listar',
   standalone: true,
   imports: [CommonModule],
-  template: '<h2>Lista de Productos</h2>',
+  templateUrl: './listar.component.html',
   styleUrl: './listar.component.css'
 })
 export default class ListarComponent {

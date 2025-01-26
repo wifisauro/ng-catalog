@@ -12,10 +12,10 @@ export default class ProductosComponent {
       constructor(private router : Router) {}
 
       irAListar(){
-        this.router.navigate(['/productos/listar']);
+        this.router.navigate(['productos/listar']);
       }
 
       irADetalles(){
-        this.router.navigate(['/productos/detalle']);
+        this.router.navigate(['productos/detalle']);
       }
 }

@@ -1,7 +1,7 @@
 <h2>Detalle del Producto</h2>
-<p><strong>Nombre:</strong> {{ producto.name }}</p>
-<p><strong>Descripción:</strong> {{ producto.description }}</p>
-<p><strong>Precio:</strong> ${{ producto.precio }}</p>
-@if (producto.imagen) {
-  <img src="{{ producto.imagen }}" alt="{{ producto.name }}" />
+<p><strong>Nombre:</strong> {{ product().name }}</p>
+<p><strong>Descripción:</strong> {{ product().description }}</p>
+<p><strong>Precio:</strong> ${{ product().precio }}</p>
+@if (product().imagen) {
+  <img src="{{ product().imagen }}" alt="{{ producto.name }}" />
   }

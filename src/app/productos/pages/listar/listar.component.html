@@ -1,3 +1,11 @@
-<p>Escoba!</p>
-<p>Trapero!</p>
-<p>Recogedor!</p>
+<h2>Lista de Productos</h2>
+
+<ul>
+  <li *ngFor="let producto of productos">
+    <p><strong>Nombre:</strong> {{ producto.name }}</p>
+    <p><strong>Descripción:</strong> {{ producto.description }}</p>
+    <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+
+    <hr>
+  </li>
+</ul>

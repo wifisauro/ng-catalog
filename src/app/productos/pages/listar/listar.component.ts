@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Producto } from '../../interfaces/producto.interface';
+
 
 
 @Component({
   selector: 'app-listar',
   standalone: true,
   imports: [CommonModule],
-  template: '<h2>Lista de Productos</h2>',
+  templateUrl: './listar.component.html',
   styleUrl: './listar.component.css'
 })
 export default class ListarComponent {
-
+  productos: Producto[] = [
+    { name: 'Martillo', description: 'Martillo mango de madera', precio: 150 },
+    { name: 'Destornillador', description: 'Destornillador de estrella', precio: 50 },
+    { name: 'Sierra', description: 'Sierra para madera', precio: 200 }
+  ];
 }

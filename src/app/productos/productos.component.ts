@@ -4,7 +4,7 @@ import { RouterEvent, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-productos',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet],
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })

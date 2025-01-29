@@ -12,6 +12,5 @@ export const productoRoutes: Routes = [
     title: 'listar productos',
     loadComponent: () =>
       import('./pages/listar/listar.component')
-  },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  }
 ];

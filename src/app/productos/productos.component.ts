@@ -1,21 +1,34 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { RouterEvent, RouterLink, RouterOutlet } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-productos',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
 export default class ProductosComponent {
-      constructor(private router : Router) {}
+  mostrarBotones: boolean = true;
 
-      irAListar(){
-        this.router.navigate(['productos/listar']);
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Si la ruta es exactamente "/productos", muestra los botones
+        this.mostrarBotones = event.url === '/productos';
       }
+    });
+  }
 
-      irADetalles(){
-        this.router.navigate(['productos/detalle']);
-      }
+  irAListar() {
+    this.mostrarBotones = false;
+    this.router.navigate(['/productos/listar']);
+  }
+
+  irADetalles() {
+    this.mostrarBotones = false;
+    this.router.navigate(['/productos/detalle']);
+  }
 }

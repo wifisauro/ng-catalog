@@ -1,8 +1,7 @@
 <p>Bienvenido!</p>
 
-<div class="button-container">
+<div class="button-container" *ngIf="mostrarBotones">
   <button (click)="irAListar()">📋 Ver lista</button>
-  <br><br>
   <button (click)="irADetalles()">🔍 Ver detalle</button>
 </div>
 

@@ -1,4 +1,5 @@
 export interface Producto {
+  id: string;
   name : string;
   description : string;
   precio: number;
@@ -6,6 +7,7 @@ export interface Producto {
 }
 
 export const PRODUCTO: Producto = {
+  id: '',
   name : '',
   description : '',
   precio: 0,

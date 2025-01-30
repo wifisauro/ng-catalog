@@ -16,6 +16,7 @@ export default class DetalleComponent implements OnInit {
   protected product: WritableSignal<Producto> = signal(PRODUCTO)
 
   producto : Producto ={
+    id: "1",
     name: "Pincel",
     description: "Tamaño numero 8, punta plana" ,
     precio: 100,

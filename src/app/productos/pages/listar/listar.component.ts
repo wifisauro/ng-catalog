@@ -13,8 +13,8 @@ import { Producto } from '../../interfaces/producto.interface';
 })
 export default class ListarComponent {
   productos: Producto[] = [
-    { name: 'Martillo', description: 'Martillo mango de madera', precio: 150 },
-    { name: 'Destornillador', description: 'Destornillador de estrella', precio: 50 },
-    { name: 'Sierra', description: 'Sierra para madera', precio: 200 }
+    { id: '11', name: 'Martillo', description: 'Martillo mango de madera', precio: 150 },
+    { id: '12', name: 'Destornillador', description: 'Destornillador de estrella', precio: 50 },
+    { id: '13', name: 'Sierra', description: 'Sierra para madera', precio: 200 }
   ];
 }
